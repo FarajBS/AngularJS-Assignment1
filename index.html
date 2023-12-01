@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="module1AssignmentApp">
+    <head>
+        <title>AngularJS-Assignment1</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="angular.min.js"></script>  
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="module1AssignController" class="container">
+            <h1>Lunch Checker</h1>
+            <div class="form-group">
+                <input dir="auto" type="text"
+                    placeholder="List comma separated dishes you usually have for lunch"
+                    class="form-control" ng-model="inputItem">
+            </div>
+            <div class="form-group">
+                <button class="btn" ng-click="checkItems()">Check if too Much</button>
+            </div>
+            <div class="form-group message">
+                <h1 id="resultType">{{inputResult}}</h1>
+            </div>
+        </div>
+    </body>
+</html>
